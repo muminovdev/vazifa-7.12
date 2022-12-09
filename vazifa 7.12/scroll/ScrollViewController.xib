@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScrollViewController" customModule="vazifa_7_12" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SsM-0b-muv">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ho" translatesAutoresizingMaskIntoConstraints="NO" id="ybS-6f-JJs">
+                            <rect key="frame" x="10" y="20" width="367" height="300"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="300" id="BAs-mJ-msq"/>
+                                <constraint firstAttribute="width" constant="367" id="bxv-kX-s4X"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Baxtiyor  Isroil Jahogir Jamshid Javohir Bahodir Baxtiyor  Isroil Jahogir Jamshid Javohir Bahodir" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ETk-qq-GxM">
+                            <rect key="frame" x="123.00000000000001" y="340" width="147.33333333333337" height="573"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ybS-6f-JJs" secondAttribute="bottom" constant="439" id="Brw-XC-5Ve"/>
+                        <constraint firstItem="ETk-qq-GxM" firstAttribute="centerX" secondItem="SsM-0b-muv" secondAttribute="centerX" id="S0a-jc-Zwn"/>
+                        <constraint firstItem="ybS-6f-JJs" firstAttribute="top" secondItem="SsM-0b-muv" secondAttribute="top" constant="20" id="h1d-3s-mlb"/>
+                        <constraint firstItem="ybS-6f-JJs" firstAttribute="leading" secondItem="SsM-0b-muv" secondAttribute="leading" constant="10" id="ngW-xY-06w"/>
+                        <constraint firstAttribute="trailing" secondItem="ybS-6f-JJs" secondAttribute="trailing" constant="10" id="vmJ-99-kda"/>
+                        <constraint firstItem="ETk-qq-GxM" firstAttribute="top" secondItem="ybS-6f-JJs" secondAttribute="bottom" constant="20" id="x3r-cX-I7v"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="SsM-0b-muv" secondAttribute="trailing" id="F45-Hb-SXd"/>
+                <constraint firstItem="SsM-0b-muv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KM1-4P-L8G"/>
+                <constraint firstItem="SsM-0b-muv" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="jMt-Sw-O1W"/>
+                <constraint firstItem="SsM-0b-muv" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="t49-bE-fGM"/>
+            </constraints>
+            <point key="canvasLocation" x="52.671755725190835" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ho" width="375" height="224"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

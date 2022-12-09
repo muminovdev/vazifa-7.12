@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  ScrollViewController.swift
 //  vazifa 7.12
 //
 //  Created by Javlonbek Dev on 09/12/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class ScrollViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,15 +15,7 @@ class FirstViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func TableTap(_ sender: UIButton) {
-        let vc = TableViewController()
-        navigationController?.pushViewController(vc, animated: true)
-    }
-    
-    @IBAction func ScrollTap(_ sender: Any) {
-        let vc = ScrollViewController()
-        navigationController?.pushViewController(vc, animated: true)
-    }
+
     /*
     // MARK: - Navigation
 

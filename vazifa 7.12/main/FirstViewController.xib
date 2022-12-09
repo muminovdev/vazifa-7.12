@@ -10,7 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController" customModule="vazifa_7_12" customModuleProvider="target">
             <connections>
-                <outlet property="tableview" destination="h4Y-3m-fC1" id="zZP-pN-n42"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,20 +18,39 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="h4Y-3m-fC1">
-                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                </tableView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="i4m-AJ-C99">
+                    <rect key="frame" x="119.33333333333333" y="362.33333333333331" width="154.66666666666669" height="127.33333333333331"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0o-vi-E2f">
+                            <rect key="frame" x="0.0" y="0.0" width="154.66666666666666" height="48.666666666666664"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="TableView">
+                                <fontDescription key="titleFontDescription" type="system" pointSize="29"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="TableTap:" destination="-1" eventType="touchUpInside" id="wFO-gW-Fk1"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9vB-wc-XaE">
+                            <rect key="frame" x="0.0" y="78.666666666666686" width="154.66666666666666" height="48.666666666666657"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="ScrollView">
+                                <fontDescription key="titleFontDescription" type="system" pointSize="29"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="ScrollTap:" destination="-1" eventType="touchUpInside" id="FdR-NX-BSN"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="h4Y-3m-fC1" secondAttribute="trailing" id="exk-kB-or9"/>
-                <constraint firstItem="h4Y-3m-fC1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="fJ9-FJ-t5O"/>
-                <constraint firstItem="h4Y-3m-fC1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="hF4-Rb-Eqc"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="h4Y-3m-fC1" secondAttribute="bottom" id="oQ8-RL-tMl"/>
+                <constraint firstItem="i4m-AJ-C99" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="HMh-OO-eMe"/>
+                <constraint firstItem="i4m-AJ-C99" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pwt-H1-RMi"/>
             </constraints>
-            <point key="canvasLocation" x="114" y="-11"/>
+            <point key="canvasLocation" x="131" y="-11"/>
         </view>
     </objects>
     <resources>
