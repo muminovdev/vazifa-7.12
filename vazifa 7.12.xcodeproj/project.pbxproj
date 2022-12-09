@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04BB08432942F8CA00F2532F /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BB08422942F8CA00F2532F /* model.swift */; };
 		04C6C57B2940FF4D006232A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C6C57A2940FF4D006232A9 /* AppDelegate.swift */; };
 		04C6C57D2940FF4D006232A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C6C57C2940FF4D006232A9 /* SceneDelegate.swift */; };
 		04C6C57F2940FF4D006232A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C6C57E2940FF4D006232A9 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04BB08422942F8CA00F2532F /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
 		04C6C5772940FF4D006232A9 /* vazifa 7.12.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vazifa 7.12.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		04C6C57A2940FF4D006232A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04C6C57C2940FF4D006232A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04BB08412942F81F00F2532F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				04BB08422942F8CA00F2532F /* model.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		04C6C56E2940FF4D006232A9 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 			children = (
 				04C6C59C294101BB006232A9 /* CellTableViewCell.swift */,
 				04C6C59D294101BB006232A9 /* CellTableViewCell.xib */,
+				04BB08412942F81F00F2532F /* model */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -177,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04C6C5A329410589006232A9 /* FirstViewController.swift in Sources */,
+				04BB08432942F8CA00F2532F /* model.swift in Sources */,
 				04C6C59E294101BB006232A9 /* CellTableViewCell.swift in Sources */,
 				04C6C57F2940FF4D006232A9 /* ViewController.swift in Sources */,
 				04C6C57B2940FF4D006232A9 /* AppDelegate.swift in Sources */,

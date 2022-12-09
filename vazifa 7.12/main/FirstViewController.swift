@@ -9,9 +9,13 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    var people = [Person(personimage: "person", name: "Baxtiyor", mainimage: "home"),
+                  Person(personimage: "person.fill", name: "Isroil", mainimage: "Hause"),
+                  Person(personimage: "person.cirle", name: "Jahongir", mainimage: "hold") ]
     @IBOutlet weak var tableview: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Baxtiyor"
         tableview.dataSource = self
         tableview.delegate = self
         tableview.rowHeight = UITableView.automaticDimension
@@ -34,11 +38,16 @@ class FirstViewController: UIViewController {
 }
 extension FirstViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        8
+        return people.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CellTableViewCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CellTableViewCell", for: indexPath) as!
+        CellTableViewCell
+        cell.personImage.image = UIImage(systemName: people[indexPath.row].personimage)
+        cell.personName.text = people[indexPath.row].name
+        cell.mainImage.image = UIImage(named: people[indexPath.row].mainimage)
+        
         return cell
     }
     
